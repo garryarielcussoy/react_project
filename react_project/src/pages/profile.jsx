@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../components/Header'
 
 import {Redirect, withRouter} from 'react-router-dom'
-import {store, actions} from '../global/storeSetyo'
+import {store, actions} from '../global/store'
 import { connect } from "unistore/react";
 
 class Profile extends React.Component{
