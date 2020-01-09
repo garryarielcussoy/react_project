@@ -19,7 +19,11 @@ class Login extends React.Component{
     //       body: data,
     //     });
     // }
-
+    IsRememberState = false;
+    handleIsRememberState(el){
+        // console.log(el.target.checked)
+        this.IsRememberState = el.target.checked;
+    }
 
     render(){
         console.log("nilai user Credential", this.props.user_credential);
@@ -32,9 +36,10 @@ class Login extends React.Component{
                         <input type="text" className="form-control" name="username" placeholder="Username or Email Address" required="" autoFocus="" />
                         <input type="password" className="form-control" name="password" placeholder="Password" required=""/>      
                         <label className="checkbox">
-                            <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe" onClick={e => this.props.handleIsRememberState(e)}/> Remember me
+                            <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe" onClick={e => this.handleIsRememberState(e)}/> Remember me
                         </label>
-                        <button className="btn btn-lg btn-primary btn-block" onClick={this.props.storeHandleLogin}>Login</button>   
+                        {/* {e => this.props.SearchClick(e)} */}
+                        <button className="btn btn-lg btn-primary btn-block" onClick={ e => this.props.storeHandleLogin(this.IsRememberState)} > Login </button>   
                     </form>
                 </div>
             </div>
