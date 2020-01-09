@@ -2,17 +2,18 @@ import createStore from "unistore";
 import axios from 'axios';
 
 const allState = {
-    userCredential: {
-        fullName: '',
-        userName: '',
+    user_credential: {
+        full_name: '',
+        user_name: '',
         email: '',
         bio: '',
-        apiKey: '',
-        profileImage: '',
-        isLogin: false,
-        isRemembered: false
+        api_key: '',
+        profile_image: '',
+        is_login: false,
+        is_remembered: false
     }
 };
+
 
 export const store = createStore(allState);
 
@@ -21,11 +22,11 @@ export const actions = store => ({
     handleIsRememberState: (state, el) =>{
         // console.log(el.target.checked);
         // { someProperty: { ...this.state.someProperty, flag: false} }
-        store.setState({userCredential: {...store.state, isRemembered: el.target.checked}});
+        store.setState({user_credential: {...store.state, is_remembered: el.target.checked}});
     },
 
 
-    storeHandleLogin: async(state, isRemembered) => {
+    storeHandleLogin: async(state, is_remembered) => {
         // console.log("masuk sini BOSS")
         // await axios
         // .post("https://bimon.free.beeceptor.com/auth", "")
@@ -49,3 +50,5 @@ export const actions = store => ({
     },
 
 });
+
+
