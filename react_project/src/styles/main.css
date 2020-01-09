@@ -1,77 +1,57 @@
 /* ----- HEADER ----- */
-header{
-    background-color: rgba(105, 105, 105, 0.1);
+.header{
+    background-color: rgba(128, 128, 128, 0.3);
 }
 
-.react-logo{
-    width: 80px;
-    height: 80px;
+.header-info-kota{
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-.topic-menu, .register-menu{
-    margin-top: 18px;
-    text-align: left;
-    font-size: 0.9em;
+.header-logo{
+    height: 70px;
+    width: 70px;
 }
 
-.topic-menu li, .register-menu li{
-    display: inline-block;
-    padding: 10px;
+.header-profile{
+    text-align: right;
+    padding-right: 50px;
+    padding-top: 30px;
 }
 
-.topic-menu li a, .register-menu li a{
-    color: rgba(105, 105, 105, 0.8);
+.login-text{
+    font-weight: 500;
+    font-size: 1.2em;
+    color: black;
 }
 
-.topic-menu li a:hover, .register-menu li a:hover{
-    color: rgba(105, 105, 105, 0.8);
+.login-text:hover{
     text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: blue;
 }
 
-
-/* ----- HOME ----- */
-.main-page{
-    margin-top: 100px;
-    text-align: center;
-}
-
-.h4-title{
-    margin-top: 15px;
-    margin-bottom: 15px
-}
-
-.image-content{
-    width: 100%;
-    border: solid rgba(105, 105, 105, 0.4) 1px;
-}
-
-.button-content{
-    margin-bottom: 15px;
-    margin-top: 25px;
-    color: white;
-}
-
-/* ----- CATEGORY ----- */
-.category-content{
+/* ----- HOMEPAGE COMPONENT ----- */
+.info-kota-information{
     margin-top: 50px;
-}
-
-.category-show{
-    margin-bottom: 30px;
-    text-align: center;
-    border: solid rgba(105, 105, 105, 0.4) 1px;
-}
-
-.image-category{
-    border: solid rgba(105, 105, 105, 0.4) 1px;
-}
-
-.each-image-category{
+    padding: 30px;
     width: 100%;
+    background-color: rgba(128, 128, 128, 0.3);
+    border: solid 1px rgba(128, 128, 128, 0.3);
+    animation: border-information-content 4s infinite linear;
 }
 
-.description-category{
-    text-align: left ;
-    padding: 15px;
-    margin-bottom: 20px;
+.information-content{
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+@keyframes border-information-content {
+    0%   {border: 3px solid rgba(128, 128, 128, 0.4);}
+    50%  {border: 3px solid rgba(128, 128, 128, 1);}
+    100%  {border: 3px solid rgba(128, 128, 128, 0.4);}
 }
