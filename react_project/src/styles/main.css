@@ -1,0 +1,77 @@
+/* ----- HEADER ----- */
+header{
+    background-color: rgba(105, 105, 105, 0.1);
+}
+
+.react-logo{
+    width: 80px;
+    height: 80px;
+}
+
+.topic-menu, .register-menu{
+    margin-top: 18px;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+.topic-menu li, .register-menu li{
+    display: inline-block;
+    padding: 10px;
+}
+
+.topic-menu li a, .register-menu li a{
+    color: rgba(105, 105, 105, 0.8);
+}
+
+.topic-menu li a:hover, .register-menu li a:hover{
+    color: rgba(105, 105, 105, 0.8);
+    text-decoration: none;
+}
+
+
+/* ----- HOME ----- */
+.main-page{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.h4-title{
+    margin-top: 15px;
+    margin-bottom: 15px
+}
+
+.image-content{
+    width: 100%;
+    border: solid rgba(105, 105, 105, 0.4) 1px;
+}
+
+.button-content{
+    margin-bottom: 15px;
+    margin-top: 25px;
+    color: white;
+}
+
+/* ----- CATEGORY ----- */
+.category-content{
+    margin-top: 50px;
+}
+
+.category-show{
+    margin-bottom: 30px;
+    text-align: center;
+    border: solid rgba(105, 105, 105, 0.4) 1px;
+}
+
+.image-category{
+    border: solid rgba(105, 105, 105, 0.4) 1px;
+}
+
+.each-image-category{
+    width: 100%;
+}
+
+.description-category{
+    text-align: left ;
+    padding: 15px;
+    margin-bottom: 20px;
+}
