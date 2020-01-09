@@ -1,15 +1,9 @@
 import React from 'react'
 import '../styles/bootstrap.min.css'
 import '../styles/main.css'
-import infoKotaLogo from '../img/InfoKotaLogo.png'
-
-import {withRouter, Link} from 'react-router-dom'
-import {store, actions} from '../global/store'
-import { connect } from "unistore/react";
 
 class Header extends React.Component{
     render(){
-        console.warn("CHECK PROPS", this.props.userCredential)
         return (
             <div className='container-fluid'>
                 <div className='row header'>
@@ -37,4 +31,4 @@ class Header extends React.Component{
     }
 }
 
-export default connect("userCredential", actions)(withRouter(Header));
+export default Header

@@ -1,5 +1,5 @@
-import createStore from "unistore";
-import axios from 'axios';
+import createStore from 'unistore'
+import axios from 'axios'
 
 const allState = {
     userCredential: {
