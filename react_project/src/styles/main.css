@@ -14,22 +14,37 @@
     width: 70px;
 }
 
-.header-profile{
+.header-log{
     text-align: right;
     padding-right: 50px;
     padding-top: 30px;
 }
 
-.login-text{
+.header-home, .header-profile{
+    display: inline-block;
+    padding-right: 25px;
+    padding-top: 30px;
+}
+
+.header-home a, .header-profile a{
     font-weight: 500;
-    font-size: 1.2em;
     color: black;
 }
 
-.login-text:hover{
+.header-home a:hover, .header-profile a:hover{
     text-decoration: none;
     font-weight: 500;
-    font-size: 1.2em;
+    color: blue;
+}
+
+.login-text, .logout-text{
+    font-weight: 500;
+    color: black;
+}
+
+.login-text:hover, .logout-text:hover{
+    text-decoration: none;
+    font-weight: 500;
     color: blue;
 }
 
@@ -51,7 +66,7 @@
 }
 
 @keyframes border-information-content {
-    0%   {border: 3px solid rgba(128, 128, 128, 0.4);}
-    50%  {border: 3px solid rgba(128, 128, 128, 1);}
-    100%  {border: 3px solid rgba(128, 128, 128, 0.4);}
+    0%   {border: 5px solid rgba(0, 0, 0, 0.1);}
+    50%  {border: 5px solid rgba(0, 0, 0, 1);}
+    100%  {border: 5px solid rgba(0, 0, 0, 0.1);}
 }
