@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 
 import {withRouter} from 'react-router-dom';
-import {store, actions} from '../global/store_bimon';
+import {store, actions} from '../global/store';
 import { connect } from "unistore/react";
 
 import '../styles/bootstrap.min.css';
@@ -26,7 +26,7 @@ class Login extends React.Component{
     }
 
     render(){
-        console.log("nilai user Credential", this.props.user_credential);
+        console.log("nilai user Credential", this.props.userCredential);
         return (
             <div>
                 <Header />
@@ -48,4 +48,4 @@ class Login extends React.Component{
     }
 }
 
-export default connect("user_credential", actions)(withRouter(Login));
+export default connect("userCredential", actions)(withRouter(Login));
