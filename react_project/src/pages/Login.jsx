@@ -21,7 +21,7 @@ class Login extends React.Component{
     // }
     IsRememberState = false;
     handleIsRememberState(el){
-        console.log(el.target.checked)
+        // console.log(el.target.checked)
         this.IsRememberState = el.target.checked;
     }
 
